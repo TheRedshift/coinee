@@ -1,8 +1,9 @@
-from tkinter import *
+import currency
 
-root = Tk()
+while 1:
 
-w = Label(root, text="Hello, world!")
-w.pack()
+    currencyCode = input("Enter 3 letter currency code\n")
 
-root.mainloop()
+    currencyCode = currencyCode.upper()
+
+    currency.btctoanything(currencyCode)
