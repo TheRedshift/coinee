@@ -1,9 +1,11 @@
 import currency
 
+converter = currency.BtcToX()
+
 while 1:
 
-    currencyCode = input("Enter 3 letter currency code\n")
+    currencyCode = input("Enter 3 letter currency code or X to exit\n")
 
     currencyCode = currencyCode.upper()
 
-    currency.btctoanything(currencyCode)
+    converter.btctoanything(currencyCode)
